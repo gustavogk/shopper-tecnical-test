@@ -30,7 +30,7 @@
 * [Tecnologias](#rocket-tecnologias)  
 * [Como Executar o Projeto](#como-executar-o-projeto)
 * [Estrutura das Rotas](#estrutura-das-rotas)
-* [Licença](#page_facing_up-licença)
+* [Licença](#page_facing_up_licença)
   
 # Sobre o Projeto
 
@@ -44,6 +44,7 @@ Este projeto foi desenvolvido utilizando as seguintes tecnologias:
 * [Sequelize](https://sequelize.org/)
 * [PostgreSQL](https://www.postgresql.org/)
 * [Typescript](https://www.typescriptlang.org/)
+* [Google Gemini](https://ai.google.dev/gemini-api/docs/api-key)
 
 # Como Executar o Projeto
 
@@ -61,5 +62,3 @@ This project is under the [MIT license](./LICENSE).
 Made with 💖 by [Gustavo Assunção](https://www.linkedin.com/in/gustavo-gk/). 
 
 Thank you! 🌠
-
-
