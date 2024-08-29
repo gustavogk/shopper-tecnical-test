@@ -54,4 +54,12 @@ Para executar o projeto, siga as etapas abaixo:
    git clone https://github.com/gustavogk/shopper-tecnical-test.git
    docker-compose build
    docker-compose up
-   
+
+# :page_facing_up: License
+
+This project is under the [MIT license](./LICENSE).
+Made with 💖 by [Gustavo Assunção](https://www.linkedin.com/in/gustavo-gk/). 
+
+Thank you! 🌠
+
+
