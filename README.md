@@ -1,5 +1,5 @@
 <p align="center">
-  <img src="./public/images/logo.svg" width="200"/> 
+  <img src="./github/public/og-logo.png" width="200"/> 
 </p>
 
 <p align="center">	
