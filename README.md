@@ -29,8 +29,6 @@
 * [Sobre o Projeto](#sobre-o-projeto)
 * [Tecnologias](#rocket-tecnologias)  
 * [Como Executar o Projeto](#como-executar-o-projeto)
-* [Estrutura das Rotas](#estrutura-das-rotas)
-* [Licença](#page_facing_up_licença)
   
 # Sobre o Projeto
 
