@@ -1,7 +1,21 @@
+import { Model, DataTypes } from "sequelize";
 import sequelize from "../config/database";
-import { DataTypes } from "sequelize";
 
-const Measurement = sequelize.define(
+interface MeasurementAttributes {
+  customerCode: string;
+  imageUrl: string;
+  measureValue: number;
+  measureType: "WATER" | "GAS";
+  measureDatetime: Date;
+  hasConfirmed: boolean;
+  measureUuid: string; // Campo opcional
+}
+
+interface MeasurementInstance
+  extends Model<MeasurementAttributes>,
+    MeasurementAttributes {}
+
+const Measurement = sequelize.define<MeasurementInstance>(
   "measurements",
   {
     customerCode: {
@@ -9,15 +23,15 @@ const Measurement = sequelize.define(
       allowNull: false,
     },
     imageUrl: {
-      type: DataTypes.TEXT,
+      type: DataTypes.STRING,
       allowNull: false,
     },
     measureValue: {
-      type: DataTypes.FLOAT,
+      type: DataTypes.INTEGER,
       allowNull: false,
     },
     measureType: {
-      type: DataTypes.STRING,
+      type: DataTypes.ENUM("WATER", "GAS"),
       allowNull: false,
     },
     measureDatetime: {
@@ -27,6 +41,11 @@ const Measurement = sequelize.define(
     hasConfirmed: {
       type: DataTypes.BOOLEAN,
       defaultValue: false,
+      allowNull: false,
+    },
+    measureUuid: {
+      type: DataTypes.STRING,
+      allowNull: false,
     },
   },
   {
@@ -34,7 +53,7 @@ const Measurement = sequelize.define(
   }
 );
 
-Measurement.sync({ alter: false, force: false }).then(() => {
+Measurement.sync({ alter: true, force: true }).then(() => {
   console.log("Tabela Measurement criada");
 });
 
